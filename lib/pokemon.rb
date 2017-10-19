@@ -20,8 +20,11 @@ class Pokemon
         result = (db.execute(sql, id)).flatten
         new_pokemon = Pokemon.new(id:result[0], name:result[1], type:result[2])
         new_pokemon
-
      end
+
+  def BONUS
+    hp = 60
+  end
 
 
 end
